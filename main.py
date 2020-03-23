@@ -1,3 +1,6 @@
 import pandas as pd
 
-pd.read_csv('data/ratings.csv')
+rating = pd.read_csv('data/ratings.csv')
+rating.head()
+rating.shape
+
