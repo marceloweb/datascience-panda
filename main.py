@@ -4,6 +4,7 @@ rating = pd.read_csv('data/ratings.csv')
 rating.head()
 rating.shape
 rating['rating'].value_counts()
-rating['rating'].mean()
+print(rating['rating'].mean())
+print(rating['rating'].median())
 
 rating.rating.plot(kind='hist')
