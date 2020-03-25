@@ -7,7 +7,7 @@ rating.shape
 rating['rating'].value_counts()
 print(rating['rating'].mean())
 print(rating['rating'].median())
-print(rating.query("movieId==1").rating.median())
+print(rating.query("movieId==1").mean()['rating'])
 
 rating.rating.plot(kind='hist')
 print(rating.rating.describe())
