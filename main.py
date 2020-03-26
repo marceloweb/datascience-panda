@@ -16,3 +16,7 @@ sns.boxplot(rating.rating)
 
 movies = pd.read_csv('data/movies.csv')
 movies.head()
+
+tmdb = pd.read_csv('data/tmdb_5000_movies.csv')
+tmdb.head()
+tmdb.original_language.unique()
