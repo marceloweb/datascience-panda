@@ -20,3 +20,8 @@ movies.head()
 tmdb = pd.read_csv('data/tmdb_5000_movies.csv')
 tmdb.head()
 tmdb.original_language.unique()
+# Serie
+
+count_language = tmdb["original_language"].value_counts().to_frame().reset_index()
+count_language.columns = ["original_language","total"]
+count_language.head()
